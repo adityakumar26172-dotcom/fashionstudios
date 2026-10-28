@@ -1,12 +1,7 @@
 {
-  "name": "sabrang-monorepo",
+  "name": "fashion-studios-monorepo",
   "private": true,
-  "workspaces": [
-    "client",
-    "server"
-  ],
   "scripts": {
-    "build:client": "npm run build --workspace=client",
-    "dev": "npm run build:client && cd server && npx nodemon index.js"
+    "build": "cd client && npm install && npm run build"
   }
 }
